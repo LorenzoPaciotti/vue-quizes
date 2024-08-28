@@ -10,7 +10,7 @@ const quizes = q;
 const route = useRoute()
 
 
-const quizId = parseInt(route.params.id);
+const quizId = parseInt(route.params.id);//id fieldname as defined in @/router/index.js
 const quiz = quizes.find(x => x.id === quizId)
 
 console.log(quiz)
@@ -20,5 +20,18 @@ console.log(quiz)
 
 <template>
 
+    <div>
+        <header>
+            <div class="bar">
+                <div class="completion">
+
+                </div>
+            </div>
+        </header>
+    </div>
+
 </template>
 
+<style scoped>
+
+</style>
